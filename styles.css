@@ -15,21 +15,27 @@
 body {
     font-family: "Fuzzy Bubbles", sans-serif;
     font-weight: normal;
-    background-color: white;
+    background-color: #f0f0f0;
     color: #333;
+    margin: 0;
+    padding: 0;
 }
 
 .hero{
-    background-image: url("./images/KLbackground.webp");
+    background-image: url("./images/KLbackground.jpeg");
     background-size: cover;
-    height: 100vh;
-    max-height: 350px;
+    background-position: center;
+    background-attachment: fixed;
+    height: 100vh; 
     text-align: center;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+}
 
+.hero-text {
+    position: relative;
 }
 
 #hero-tag {
@@ -50,4 +56,52 @@ body {
     margin-top: 0;
     padding: 5px 20px;
     text-shadow: 0 0 20px rgba(0, 0, 0, 1);
+}
+
+.destinations{
+    text-align: center;
+    margin-top: 40px;
+}
+.card-container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card{
+    width: 380px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    margin: 20px;
+    overflow: hidden;
+    transition: 0.3s ease;
+}
+
+.card:hover{
+    box-shadow: 0 20px 40px rgba(0,0,0,0.4), 0 10px 20px rgba(0,0,0,0.3);
+    transform: scale(1.05);
+}
+
+.card img{
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+
+.card-text {
+    padding: 0 15px;
+}
+
+.card-text h6{
+    font-size: 22px;
+    margin: 15px 0 0 0;
+
+}
+
+.card-text p{
+    font-size: 14px;
+    line-height: 1.4;
+    color: #666;
+    margin-bottom: 20px;
 }
