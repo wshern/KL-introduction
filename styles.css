@@ -1,0 +1,53 @@
+@font-face {
+    font-family:"Fuzzy Bubbles";
+    src: url("./fonts/Fuzzy_Bubbles/FuzzyBubbles-Regular.ttf") format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family:"Fuzzy Bubbles";
+    src: url("./fonts/Fuzzy_Bubbles/FuzzyBubbles-Bold.ttf") format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+body {
+    font-family: "Fuzzy Bubbles", sans-serif;
+    font-weight: normal;
+    background-color: white;
+    color: #333;
+}
+
+.hero{
+    background-image: url("./images/KLbackground.webp");
+    background-size: cover;
+    height: 100vh;
+    max-height: 350px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+#hero-tag {
+    color: #ffffff;
+    font-size: 30px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    border-radius: 8px;
+    padding: 5px 10px 0px;
+    text-shadow: 0 0 20px rgba(0, 0, 0, 1);
+}
+
+#hero-title {
+    color: #ffffff;
+    font-size: 70px;
+    font-weight:bold;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    border-radius: 8px;
+    margin-top: 0;
+    padding: 5px 20px;
+    text-shadow: 0 0 20px rgba(0, 0, 0, 1);
+}
