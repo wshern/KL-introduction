@@ -27,7 +27,8 @@ body {
     background-position: center;
     background-attachment: fixed;
     position: relative;
-    height: 100vh; 
+    min-height: 100vh; 
+    padding: 60px 20px;
     text-align: center;
     display: flex;
     justify-content: center;
@@ -54,7 +55,7 @@ body {
 
 #hero-tag {
     color: #ffffff;
-    font-size: 30px;
+    font-size: clamp(18px, 4vw 30px);
     font-weight: bold;
     padding: 5px 10px 0px;
     text-shadow: 0 0 20px rgba(0, 0, 0, 1);
@@ -62,7 +63,7 @@ body {
 
 #hero-title {
     color: #ffffff;
-    font-size: 130px;
+    font-size: clamp(48px, 10vw, 130px);
     font-weight:bold;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.8);
     border-radius: 25px;
@@ -80,7 +81,8 @@ body {
     background-position: center;
     background-attachment: fixed;
     position: relative;
-    height: 100vh; 
+    min-height: 100vh;
+    padding: 60px 20px; 
     text-align: center;
     display: flex;
     justify-content: center;
@@ -139,7 +141,8 @@ body {
 }
 
 .card{
-    width: 380px;
+    width: 100%;
+    max-width: 380px;
     background-color: #ffffff;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
@@ -229,4 +232,39 @@ body {
 
 .list{
     text-align: left;    
+}
+
+@media (max-width: 768px) {
+    .hero,
+    .introduction {
+        background-attachment: scroll;
+    }
+}
+
+@media (max-width: 768px) {
+
+    #hero-title {
+        padding: 10px 20px;
+        border-radius: 15px;
+    }
+
+    .intro-text {
+        padding: 20px;
+    }
+
+    .card-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .wslim {
+        width: 90%;
+        height: auto;
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .selfie {
+        margin-bottom: 15px;
+    }
 }
