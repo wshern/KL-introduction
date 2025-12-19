@@ -248,15 +248,11 @@ body {
     text-align: left;    
 }
 
-@media (max-width: 768px) {
+@media (max-width: 768px) and (orientation: portrait) {
     .hero,
     .introduction {
         background-attachment: scroll;
     }
-}
-
-@media (max-width: 768px) {
-
     #hero-title {
         padding: 10px 20px;
         border-radius: 15px;
@@ -280,5 +276,50 @@ body {
 
     .selfie {
         margin-bottom: 15px;
+        width: 150px;
+        height: 150px;
+    }
+}
+
+@media (max-width: 1024px) and (orientation: landscape) {
+    .hero,
+    .introduction {
+        background-attachment: scroll;
+    }
+
+    #hero-title {
+        padding: 10px 20px;
+        border-radius: 15px;
+        font-size: clamp(36px, 8vw, 100px);
+    }
+
+    .intro-text {
+        padding: 20px;
+    }
+
+    .card-container {
+        grid-template-columns: repeat(2, 1fr);
+        justify-items: center;
+        gap: 20px;
+    }
+
+    .card img {
+        width: 100%;
+        height: auto;
+        aspect-ratio: 16/9;
+        object-fit: cover;
+    }
+
+    .wslim {
+        width: 90%;
+        height: auto;
+        flex-direction: row;
+        padding: 15px;
+    }
+
+    .selfie {
+        width: 120px;
+        height: 120px;
+        margin-bottom: 0;
     }
 }
